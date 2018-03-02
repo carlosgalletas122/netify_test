@@ -1,0 +1,560 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Comienzo CSS*/
+body {
+  overflow-x: hidden;
+}
+.cover-page {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+}
+.cover-page .cp-photo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.cover-page .cp-photo .cp-photo-curtain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+}
+.cover-page .cp-container {
+  position: relative;
+  top: 45%;
+  height: 40%;
+  margin-left: 10%;
+  max-width: 56%;
+}
+.cover-page .cp-container .cp-title {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+.cover-page .cp-container .cp-title h2 {
+  font-size: 1.5rem;
+  font-family: 'Shrikhand', cursive;
+  color: #17252D;
+  white-space: nowrap;
+}
+.cover-page .cp-container .cp-info {
+  position: relative;
+  opacity: 0;
+}
+.cover-page .cp-container .cp-info p {
+  font-size: 4.5rem;
+  font-family: 'Shrikhand', cursive;
+  color: #17252D;
+}
+.cover-page .cp-container .cp-button {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #17252D;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-top: 30px;
+  opacity: 0;
+}
+.cover-page .cp-container .cp-button p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Shrikhand', cursive;
+  color: #17252D;
+}
+.grid-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.grid-container .can-active {
+  cursor: pointer;
+}
+.grid-container .can-active .grid-curtain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  background-color: #17252D;
+}
+.grid-container .can-active .grid-photo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+}
+.grid-container .can-active .grid-info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+.grid-container .can-active .grid-info .gi-image {
+  position: relative;
+}
+.grid-container .can-active .grid-info .gi-image .gi-foto {
+  position: relative;
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+}
+.grid-container .can-active .grid-info .gi-image #play {
+  background-image: url("../assets/img/play.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-container .can-active .grid-info .gi-title {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit {
+  position: relative;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit .gi-tit-separator {
+  position: relative;
+  margin: 0 auto;
+  width: 120px;
+  height: 3px;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit .gi-tit-separator-red {
+  background-color: red;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit .gi-tit-separator-blue {
+  background-color: blue;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit .gi-tit-separator-green {
+  background-color: green;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit .gi-tit-separator-yellow {
+  background-color: yellow;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit-w h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Shrikhand', cursive;
+}
+.grid-container .can-active .grid-info .gi-title .gi-tit-b h2 {
+  color: #17252D;
+  font-size: 1.2rem;
+  font-family: 'Shrikhand', cursive;
+}
+.grid-container .can-active .grid-info .gi-info {
+  position: relative;
+  height: 30%;
+  padding-top: 20px;
+}
+.grid-container .can-active .grid-info .gi-info-w h1 {
+  font-size: 3rem;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+}
+.grid-container .can-active .grid-info .gi-info-b h1 {
+  font-size: 3rem;
+  font-family: 'Shrikhand', cursive;
+  color: black;
+}
+.grid-container .big-grid {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.grid-container .big-grid #photo1 {
+  background-image: url("../assets/img/photo1.jpg");
+}
+.grid-container .big-grid #photo9 {
+  background-image: url("../assets/img/photo9.jpg");
+}
+.grid-container .medium-grid {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.grid-container .medium-grid #photo2 {
+  background-image: url("../assets/img/photo2.jpg");
+}
+.grid-container .small-grid {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+#inverse-curtain-yellow {
+  background-color: #FFD301;
+}
+#inverse-curtain-blue {
+  background-color: #01B4E1;
+}
+#inverse-curtain-white {
+  background-color: white;
+}
+#photo3 {
+  background-image: url("../assets/img/photo3.jpg");
+}
+#photo4 {
+  background-image: url("../assets/img/photo4.jpg");
+}
+#photo5 {
+  background-image: url("../assets/img/photo5.jpg");
+}
+#photo6 {
+  background-image: url("../assets/img/photo6.jpg");
+}
+#photo7 {
+  background-image: url("../assets/img/photo7.jpg");
+}
+#photo8 {
+  background-image: url("../assets/img/photo8.jpg");
+}
+.inverse-curtain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+}
+.footer-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  clear: both;
+}
+.footer-page .fp-photo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.footer-page .fp-container {
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  width: 40%;
+  height: 30%;
+}
+.footer-page .fp-container .fp-title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10%;
+}
+.footer-page .fp-container .fp-title .separator {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 50px;
+  height: 3px;
+  background-color: white;
+}
+.footer-page .fp-container .fp-title h2 {
+  font-size: 1.5rem;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  line-height: 20px;
+}
+.footer-page .fp-container .fp-info {
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  margin-top: 30px;
+  width: 100%;
+  height: 60%;
+}
+.footer-page .fp-container .fp-info p {
+  font-size: 6rem;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  white-space: nowrap;
+}
+.footer-page .fp-container .fp-button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 300px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.footer-page .fp-container .fp-button p {
+  position: absolute;
+  top: 25%;
+  left: 16%;
+  width: 100%;
+  height: 1.2rem;
+  font-size: 1.2rem;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+}
+@media (max-width: 1400px) {
+  .cover-page .cp-container {
+    max-width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  .cover-page .cp-container {
+    max-width: 83%;
+  }
+  .grid-container .can-active .grid-info .gi-info-w h1 {
+    font-size: 1.5rem;
+  }
+  .grid-container .can-active .grid-info .gi-info-b h1 {
+    font-size: 1.5rem;
+  }
+  .grid-container .can-active.big-grid {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1050px) {
+  .footer-grid {
+    clear: both;
+  }
+  .cover-page .cp-container .cp-info p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 975px) {
+  .cover-page .cp-container {
+    top: 25%;
+    max-width: 53%;
+  }
+  .cover-page .cp-container .cp-title {
+    margin-bottom: 46px;
+  }
+  .cover-page .cp-container .cp-info p {
+    font-size: 3.5rem;
+  }
+  .cover-page .cp-container .cp-button {
+    margin-top: 56px;
+  }
+  .footer-page .fp-container .fp-info p {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .cover-page .cp-container {
+    top: 45%;
+    max-width: 82%;
+  }
+  .cover-page .cp-container .cp-title {
+    margin-bottom: 46px;
+  }
+  .cover-page .cp-container .cp-info p {
+    font-size: 3rem;
+  }
+  .cover-page .cp-container .cp-button {
+    margin-top: 82px;
+  }
+}
+@media (max-width: 649px) {
+  .big-grid,
+  .small-grid,
+  .medium-grid {
+    height: auto !important;
+  }
+  .can-active {
+    height: 100vw !important;
+  }
+  .cover-page .cp-container .cp-button {
+    margin-top: 22px;
+  }
+  .cover-page .cp-container .cp-title {
+    margin-bottom: 10px;
+  }
+  .cover-page .cp-container {
+    top: 35%;
+  }
+  .cover-page .cp-container .cp-title h2 {
+    font-size: 1rem;
+  }
+  .cover-page .cp-container .cp-info p {
+    font-size: 2.5rem;
+  }
+  .cover-page .cp-container .cp-button {
+    width: 230px;
+  }
+  .grid-container .can-active.big-grid .grid-info .gi-info-b {
+    font-size: 0.6rem;
+  }
+  .grid-container .can-active.big-grid .grid-info .gi-info-w {
+    font-size: 0.6rem;
+  }
+  .footer-page .fp-container .fp-info p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 515px) {
+  .footer-page .fp-container .fp-info p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 385px) {
+  .cover-page .cp-container .cp-info p {
+    font-size: 2.1rem;
+  }
+}

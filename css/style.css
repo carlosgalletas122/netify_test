@@ -1,0 +1,620 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Comienzo CSS*/
+body {
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.container .brand-arrow {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+.container .main-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.container .main-page .wallpaper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .main-page .page-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.container .main-page .page-form .form-line {
+  position: relative;
+  width: 90%;
+  height: 60px;
+}
+.container .main-page .page-form .container-form1 {
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  z-index: 2;
+}
+.container .main-page .page-form .container-form1 .form1 {
+  position: relative;
+  top: 55%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 55%;
+}
+.container .main-page .page-form .container-form1 .form1 form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 30px;
+  width: 30%;
+  color: white;
+  margin-left: 20px;
+  font-size: 95%;
+  float: right;
+  box-sizing: border-box;
+}
+.container .main-page .page-form .container-form1 .form1 #boton-enviar {
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+.container .main-page .page-form .container-form1 .form1 form input:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+.container .main-page .page-form .container-form1 .form1 form label {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 1.5rem;
+  float: left;
+  color: white;
+}
+.container .main-page .page-form .container-form1 .form1 form label:focus {
+  color: white;
+}
+.container .main-page .page-form .center {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+}
+.container .main-page .page-form .center .greats {
+  position: relative;
+  top: 20%;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.container .main-page .page-form .center .greats p {
+  text-align: center;
+  font-size: 2.6rem;
+  color: black;
+  font-family: 'Shrikhand', cursive;
+}
+.container .main-page .page-form .center .buttons {
+  position: relative;
+  top: 25%;
+  width: 200px;
+  height: 80px;
+  margin: 0 auto;
+}
+.container .main-page .page-form .center .buttons .button-form1 {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  float: left;
+  border: 2px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.container .main-page .page-form .center .buttons .button-form1 .arrow-left {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.container .main-page .page-form .center .buttons .button-form2 {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  float: right;
+  border: 2px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.container .main-page .page-form .center .buttons .button-form2 .arrow-right {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.container .main-page .page-form .container-form2 {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  z-index: 2;
+}
+.container .main-page .page-form .container-form2 .form2 {
+  position: relative;
+  top: 55%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 55%;
+  margin-left: 20%;
+}
+.container .main-page .page-form .container-form2 .form2 form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 30px;
+  width: 35%;
+  color: white;
+  margin-left: 20px;
+  font-size: 95%;
+  float: left;
+  box-sizing: border-box;
+}
+.container .main-page .page-form .container-form2 .form2 form input:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+.container .main-page .page-form .container-form2 .form2 #phone {
+  width: 81%;
+}
+.container .main-page .page-form .container-form2 .form2 form select {
+  margin-left: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  width: 73%;
+}
+.container .main-page .page-form .container-form2 .form2 ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: black;
+}
+.container .main-page .page-form .container-form2 .form2 :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+.container .main-page .page-form .container-form2 .form2 ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+.container .main-page .page-form .container-form2 .form2 :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+.container .main-page .page-form .container-form2 .form2 #boton-enviar {
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  width: 25%;
+}
+.container .main-page .page-form .back-button {
+  position: relative;
+  top: 5%;
+  margin-left: 5%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.container .main-page .page-form .back-button .fondo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+.container .main-page .page-form .back-button .aspa {
+  position: relative;
+  width: 45px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+}
+.container .main-page .page-form .back-button .aspa1 {
+  top: 25px;
+  transform: rotate(45deg);
+}
+.container .main-page .page-form .back-button .aspa2 {
+  top: 25px;
+  transform: rotate(135deg);
+}
+.container .main-page .page {
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+.container .main-page .page .left-part {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+.container .main-page .page .left-part .parag {
+  position: relative;
+  top: 50%;
+  overflow: hidden;
+  transform: translateY(-50%);
+  width: 65%;
+  padding-left: 10%;
+}
+.container .main-page .page .left-part .parag p {
+  width: 95%;
+  text-align: left;
+  font-size: 2.6rem;
+  color: black;
+  font-family: 'Shrikhand', cursive;
+  opacity: 0;
+  z-index: 1;
+}
+.container .main-page .page .left-part .parag .parag-curtain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+}
+.container .main-page .page .right-part {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  background-color: #DBD9DE;
+  float: right;
+}
+.container .main-page .page .right-part .photo {
+  position: relative;
+  top: 47%;
+  transform: translateY(-50%);
+  margin: 10%;
+  width: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.container .main-page .page .left-width-part {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  float: left;
+  background-color: #DBD9DE;
+}
+.container .main-page .page .left-width-part .foto {
+  width: 100%;
+  height: 40%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container .main-page .page .left-width-part .container-info {
+  position: relative;
+  top: 35%;
+  width: 80%;
+  margin-left: 10%;
+}
+.container .main-page .page .left-width-part .container-info .info {
+  width: 100%;
+  text-align: center;
+}
+.container .main-page .page .left-width-part .container-info .info p {
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Shrikhand';
+  margin-bottom: 30px;
+  opacity: 0;
+}
+.container .main-page .page .right-strech-part {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  float: right;
+  background-color: #1E1E1E;
+}
+.container .main-page .page .right-strech-part .par {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75%;
+  margin: 0 auto;
+}
+.container .main-page .page .right-strech-part .par p {
+  text-align: right;
+  margin-right: 5%;
+  font-size: 2.6rem;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  opacity: 0;
+}
+.container .main-curtain {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.container .main-curtain .curtain-part {
+  position: absolute;
+  top: 0px;
+  width: 33.4%;
+  height: 100%;
+  overflow: hidden;
+}
+.container .main-curtain .curtain-part div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #171719;
+}
+.container .main-curtain #curtain-part1 {
+  left: 0px;
+}
+.container .main-curtain #curtain-part2 {
+  left: 33.33%;
+}
+.container .main-curtain #curtain-part3 {
+  left: 66.66%;
+}
+.container .phrase {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 80%;
+  height: 25%;
+  overflow: hidden;
+  z-index: 3;
+}
+.container .phrase .line {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  height: 8rem;
+  overflow: hidden;
+}
+.container .phrase .line .word {
+  position: relative;
+  float: left;
+  padding-right: 50px;
+}
+.container .phrase .line .word .letter {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.container .phrase .line .word .letter p {
+  font-size: 8rem;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+}
+@media (max-width: 1665px) {
+  .container .main-page .page .right-strech-part .par p {
+    font-size: 2.2rem;
+  }
+  .container .main-page .page .righ-part .photo {
+    height: 35%;
+  }
+}
+@media (max-width: 1375px) {
+  .container .phrase .line .word .letter p {
+    font-size: 6rem;
+  }
+  .container .main-page .page .left-part .parag .p {
+    opacity: 1;
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 1250px) {
+  .container .main-page .page .right-strech-part .par p {
+    font-size: 1.9rem;
+  }
+  .container .main-page .page .left-width-part .container-info .p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1125px) {
+  .container .phrase .line .word .letter p {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 1085px) {
+  .container .main-page .page .right-strech-part .par p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .container .main-page .page .right-part {
+    width: 100%;
+    height: 30%;
+    top: 0px;
+  }
+  .container .main-page .page .right-part .photo {
+    height: 100% !important;
+    top: 50%;
+    width: 100%;
+    margin: 0;
+  }
+  .container .main-page .page .left-part {
+    width: 100%;
+    height: 70%;
+    top: 30%;
+    float: left;
+  }
+}
+@media (max-width: 768px) {
+  .container .phrase .line .word {
+    padding-right: 15px;
+  }
+  .container .phrase .line .word .letter p {
+    font-size: 4rem;
+  }
+}

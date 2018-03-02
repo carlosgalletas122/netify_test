@@ -1,0 +1,314 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Comienzo CSS*/
+body {
+  overflow-x: hidden;
+}
+.gallery .container-expanded-photo {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: none;
+  opacity: 0;
+}
+.gallery .container-expanded-photo .mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+.gallery .container-expanded-photo .container-photos {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery .container-expanded-photo .container-photos .photo-expanded {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.gallery .container-expanded-photo .container-photos .photo-expanded img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  max-width: 60%;
+  max-height: 60%;
+  opacity: 0;
+}
+.gallery .container-expanded-photo .button-previous-photo {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.gallery .container-expanded-photo .button-next-photo {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.gallery .container-expanded-photo .button-close {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.gallery .container-expanded-photo .button-close .axes {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.gallery .container-expanded-photo .button-close .axes .axis {
+  position: absolute;
+  top: 50%;
+  right: 16%;
+  width: 70%;
+  height: 3px;
+  background-color: white;
+}
+.gallery .container-expanded-photo .button-close .axes .axis1 {
+  transform: rotate(45deg);
+}
+.gallery .container-expanded-photo .button-close .axes .axis2 {
+  transform: rotate(135deg);
+}
+.gallery .arrow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.gallery .arrow .stick {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: white;
+}
+.gallery .arrow .stick1 {
+  top: 31%;
+  right: 10px;
+  transform: rotate(45deg);
+}
+.gallery .arrow .stick2 {
+  top: 64%;
+  right: 10px;
+  transform: rotate(135deg);
+}
+.gallery .arrow .stick3 {
+  top: 64%;
+  left: 10px;
+  transform: rotate(45deg);
+}
+.gallery .arrow .stick4 {
+  top: 31%;
+  left: 10px;
+  transform: rotate(135deg);
+}
+.gallery .main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.gallery .main-container .right-side {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.gallery .main-container .right-side .gallery-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% 10%;
+  border: 2px solid #efe0a5;
+  padding: 2.5% 2.5%;
+  box-sizing: border-box;
+}
+.gallery .main-container .right-side .gallery-container .gallery-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.gallery .main-container .right-side .gallery-container .gallery-photo .container-photo {
+  position: relative;
+  float: left;
+  width: 30%;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .main-container .right-side .gallery-container .gallery-photo .container-photo .photo img {
+  height: 0px;
+  width: 0px;
+}
+.gallery .main-container .right-side .gallery-container .gallery-photo .container-photo:nth-child(3n) {
+  margin-right: 0%;
+}
+@media (max-width: 1600px) {
+  .gallery .main-container .right-side .gallery-container .gallery-photo .container-photo {
+    width: 47.5%;
+  }
+  .gallery .main-container .right-side .gallery-container .gallery-photo .container-photo:nth-child(3n) {
+    margin-right: 5%;
+  }
+  .gallery .main-container .right-side .gallery-container .gallery-photo .container-photo:nth-child(2n) {
+    margin-right: 0%;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery .main-container .right-side .gallery-container .gallery-photo .container-photo {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
